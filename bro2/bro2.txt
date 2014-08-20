@@ -1,0 +1,13 @@
+﻿<html>
+ <body>
+
+ <form action="handler.php">
+  <p><b> Задумываетесь ли вы о смысле жизни? </b></p>
+  <p><input type="radio" name="answer" value="a1">Да, постоянно<Br>
+  <input type="radio" name="answer" value="a2">Время от времени<Br>
+  <input type="radio" name="answer" value="a3">Нет, не особо </p>
+  <p><input type="submit"></p>
+ </form>
+
+ </body>
+</html>
