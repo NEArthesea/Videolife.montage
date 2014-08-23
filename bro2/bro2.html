@@ -2,34 +2,31 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Videolife.montage</title>
-  <style type="text/css">
-   body { margin: 0; }
-   #sidebar, #content { position: absolute; } 
-   #sidebar, #content { overflow: auto; padding: 10px; }
-   #header {
-    height: 60px; /* Высота слоя */
-    background: #6495ED;
-   }
-   #header h1 { padding: 20px; margin: 0; }
-   #sidebar { 
-    width: 150px; background: #ECF5E4; border-right: 1px solid #231F20;
-    top: 62px; /* Расстояние от верхнего края */ 
-    bottom: 0; /* Расстояние снизу  */
-   }
-   #content {
-    top: 82px; /* Расстояние от верхнего края */
-    left: 170px; /* Расстояние от левого края */ 
-    bottom: 60; right: 0;
-   }
-  #footer { background-color:#6495ED; color:#551A8B; border-top: 2px solid #7B5427; position: absolute; width: 1008px; bottom: 0;
-  }
-  </style>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link href ="/style.css/style.css" rel="stylesheet" type=text/css>
  </head>
  <body>
-  <div id="header"><h1>Videolife.montage</h1></div>
+  <header, id=header> <h1>Videolife.montage</h1> </header>
   <div id="sidebar">
-   <ul> <li> <a href="/index.html"> Главная </a> </li> <li> <a href="/bro/bro.html"> Услуги </a> </li>
-   <li> <a href="/bro2/bro2.html"> Сделать заказ </a> </li>
+   <ul class="dropdown">
+   <li class="dropdown-top"> <a href="/index.html"> Главная </a>
+   <ul class="dropdown-inside"> <li>Подменю1</li>
+        <li>Подменю2</li>
+		<li>Подменю3</li>
+   </ul>
+   </li>
+   <li class="dropdown-top"> <a href="/bro/bro.html"> Услуги </a> 
+  <ul class="dropdown-inside"><li> <a href="/bro4/bro4.html">Подменю1</a></li>
+      <li>Подменю2</li>
+	  <li>Подменю3</li>
+  </ul>
+  </li>
+   <li class="dropdown-top"> <a href="/bro2/bro2.html"> Сделать заказ </a>
+   <ul class="dropdown-inside"><li>Подменю1</li>
+       <li>Подменю2</li>
+	   <li>Подменю3</li>	   
+   </ul>
+   </li>
    </ul>
   </div>
   <div id="content">
@@ -45,15 +42,22 @@ step="1"
 value="0">
 </type>
  </form>
+ <form> <p>Ваше любимое время года</p>
+ <select name="menu" size="1">
+ <option value="first">Зима</option>
+ <option value="second">Весна</option>
+ <option selected+"selected" value="third">Лето</option>
+ <option value="forth">Осень</option>
+ </select>
+ </form>
  <form action="/bro3/bro3.html">
   <p><b> Задумываетесь ли вы о смысле жизни? </b></p>
   <p><input type="radio" name="answer" value="a1">Да, постоянно<Br>
   <input type="radio" name="answer" value="a2">Время от времени<Br>
   <input type="radio" name="answer" value="a3">Нет, не особо </p>
   <p><input type="submit"></p>
- </form>
- 
+ </form> 
 </div>
-  <div id="footer"> <h4> Videolife, 2014 </h4> </div>
+  <footer id="footer"> <h4> Videolife, 2014 </h4> </footer>
  </body>
 </html>

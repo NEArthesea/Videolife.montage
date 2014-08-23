@@ -1,0 +1,23 @@
+body { margin: 0; }
+   #sidebar, #content { position: absolute; } 
+   #sidebar, #content { overflow: auto; padding: 10px; }
+   #header {
+    height: 60px; /* Высота слоя */
+    background: #6495ED;
+   }
+   #header h1 { padding: 20px; margin: 0; }
+   #sidebar { 
+    width: 150px; background: #ECF5E4; border-right: 1px solid #231F20;
+    top: 62px; /* Расстояние от верхнего края */ 
+    bottom: 0; /* Расстояние снизу  */
+   }
+   #content {
+    top: 82px; /* Расстояние от верхнего края */
+    left: 170px; /* Расстояние от левого края */ 
+    bottom: 60; right: 0;
+   }
+   ul.dropdown li.dropdown-top {}
+   ul.dropdown-inside {display:block; background-color:#6495ED; border:1px solid #231F20; position:absolute; left:-9999px;}
+   ul.dropdown li.dropdown-top:hover .dropdown-inside {display:block; left:100px;}
+  #footer { background-color:#6495ED; color:#551A8B; border-top: 2px solid #7B5427; position: absolute; width: 100%; bottom: 0;
+  }
